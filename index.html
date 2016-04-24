@@ -15,23 +15,14 @@
 				<li class="dropdown">
 					<a data-toggle="dropdown" class="dropdown-toggle" href="">Courses <b class="caret"></b></a>
 					<ul class="dropdown-menu">
-						<li class="dropdown-header"><h5>Find Dream Job</h5></li>
-						<li><a href="">Salary Negotiation (FREE)</a></li>
-						<li><a href="">Resumes & Coverletters</a></li>
-						<li><a href="">Behavioral Interviews</a></li>
-						<li><a href="">Networking</a></li>
-						<li><a href="">Job Search Strategy</a></li>
-						<li class="dropdown-header"><h5>Move Up</h5></li>
-						<li><a href="">Raise Negotiation (FREE)</a></li>
-						<li><a href="">Open Source, Blogging & Speaking</a></li>
-						<li><a href="">Goal Setting</a></li>
-						<li><a href="">Networking</a></li>
-						<li><a href="">Job Search Strategy</a></li>
-						<li class="dropdown-header"><h5>Start Up</h5></li>
-						<li><a href="">Business Negotiation (FREE)</a></li>
-						<li><a href="">Start-up Businesses</a></li>
-						<li><a href="">Cash Flow Businesses</a></li>
-						<li><a href="">Freelancing & Consulting</a></li>
+						<li class="dropdown-header" ng-repeat="package in data.packages">
+							<h5>{{package.title}}</h5>
+							<ul class="list-unstyled" ng-repeat="course in package.courses">
+								<li >
+									<a ng-href="{{course.url}}">{{course.title}}</a>
+								</li>
+							</ul>
+						</li>
 					</ul>
 				</li>
 				<li><a href="/#reviews">Reviews</a></li>
@@ -52,48 +43,25 @@
 		<div>
 			<h1>What You'll Learn</h1>
 			<div class="row text-center">
-				<div class="col-md-4">
-					<h4>Awesome Things #1</h4>
-					<h4>Awesome Thing #1</h4>
-					<h4>Awesome Thing #1</h4>
-				</div>
-				<div class="col-md-4">
-					<h4>Awesome Things #1</h4>
-					<h4>Awesome Thing #1</h4>
-					<h4>Awesome Thing #1</h4>
-				</div>
-				<div class="col-md-4">
-					<h4>Awesome Things #1</h4>
-					<h4>Awesome Thing #1</h4>
-					<h4>Awesome Thing #1</h4>
+				<div class="col-md-4" ng-repeat="bullet in data.salesbullets">
+					<h4>{{bullet}}</h4>
 				</div>
 			</div>
 		</div>
 		<hr>
 		<div>
 			<h1 class="header">How You'll Learn</h1>
-			<div class="benefit">
-				<h2 class="text-center">Blah Blah</h2>
-				<div class="row">
-					<img class="col-md-3" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=150" alt="">
-					<p class="col-md-9">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+			<div ng-repeat="method in data.methods">
+				<h2 class="text-center">{{method.title}}</h2>
+				<div class="row" ng-if="$even">
+					<img class="col-md-3" ng-src="{{method.imageurl}}" alt="">
+					<p class="col-md-9">{{method.details}}</p>
+				</div>
+				<div class="row" ng-if="$odd">
+					<p class="col-md-9">{{method.details}}</p>
+					<img class="col-md-3" ng-src="{{method.imageurl}}" alt="">
 				</div>
 			</div>
-			<div class="benefit">
-				<h2 class="text-center">Blah Blah</h2>
-				<div class="row">
-					<p class="col-md-9">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-					<img class="col-md-3" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=150" alt="">
-				</div>
-			</div>
-			<div class="benefit">
-				<h2 class="text-center">Blah Blah</h2>
-				<div class="row">
-					<img class="col-md-3" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=150" alt="">
-					<p class="col-md-9">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-				</div>
-			</div>
-
 		</div>
 		<hr>
 		<div>
@@ -125,112 +93,17 @@
 		<hr>
 		<div>
 			<h1>Courses</h1>
-			<div class="row row-centered text-center course-set">
-				<h2 class="package-title text-center">Job Prep Package</h2>
-		        <div class="col-xs-3 col-centered">
-	        		<div class="course">
-	        			<h4>Course Title</h4>
-						<img src="http://placehold.it/140x100" alt="">
-						<p class="course-description">Course Description Like about how amazing it is</p>
-						<button class="btn btn-success">Buy Now: $129</button>
-	        		</div>
-		        </div>
-		        <div class="col-xs-3 col-centered">
-	        		<div class="course">
-	        			<h4>Course Title</h4>
-						<img src="http://placehold.it/140x100" alt="">
-						<p class="course-description">Course Description Like about how amazing it is</p>
-						<button class="btn btn-success">Buy Now: $129</button>
-	        		</div>
-		        </div>
-		        <div class="col-xs-3 col-centered">
-	        		<div class="course">
-	        			<h4>Course Title</h4>
-						<img src="http://placehold.it/140x100" alt="">
-						<p class="course-description">Course Description Like about how amazing it is</p>
-						<button class="btn btn-success">Buy Now: $129</button>
-	        		</div>
-		        </div>
-		        <div class="col-xs-3 col-centered">
-	        		<div class="course">
-	        			<h4>Course Title</h4>
-						<img src="http://placehold.it/140x100" alt="">
-						<p class="course-description">Course Description Like about how amazing it is</p>
-						<button class="btn btn-success">Buy Now: $129</button>
-	        		</div>
+			<div class="row row-centered text-center course-set" ng-repeat="package in data.packages">
+				<h2 class="package-title text-center">{{package.title}}</h2>
+		        <div class="col-xs-3 col-centered" ng-repeat="course in package.courses">
+			        <div class="course">
+	        			<h4>{{course.title}}</h4>
+						<img ng-src="{{course.imageurl}}" alt="">
+						<p class="course-description">{{course.description}}</p>
+						<button class="btn btn-success">Buy Now: ${{course.price}}</button>
+					</div>
 		        </div>
 		    </div>
-		    <div class="row row-centered text-center course-set">
-				<h2 class="package-title text-center">Job Prep Package</h2>
-		        <div class="col-xs-3 col-centered">
-	        		<div class="course">
-	        			<h4>Course Title</h4>
-						<img src="http://placehold.it/140x100" alt="">
-						<p class="course-description">Course Description Like about how amazing it is</p>
-						<button class="btn btn-success">Buy Now: $129</button>
-	        		</div>
-		        </div>
-		        <div class="col-xs-3 col-centered">
-	        		<div class="course">
-	        			<h4>Course Title</h4>
-						<img src="http://placehold.it/140x100" alt="">
-						<p class="course-description">Course Description Like about how amazing it is</p>
-						<button class="btn btn-success">Buy Now: $129</button>
-	        		</div>
-		        </div>
-		        <div class="col-xs-3 col-centered">
-	        		<div class="course">
-	        			<h4>Course Title</h4>
-						<img src="http://placehold.it/140x100" alt="">
-						<p class="course-description">Course Description Like about how amazing it is</p>
-						<button class="btn btn-success">Buy Now: $129</button>
-	        		</div>
-		        </div>
-		        <div class="col-xs-3 col-centered">
-	        		<div class="course">
-	        			<h4>Course Title</h4>
-						<img src="http://placehold.it/140x100" alt="">
-						<p class="course-description">Course Description Like about how amazing it is</p>
-						<button class="btn btn-success">Buy Now: $129</button>
-	        		</div>
-		        </div>
-		    </div>
-		    <div class="row row-centered text-center course-set">
-				<h2 class="package-title text-center">Job Prep Package</h2>
-		        <div class="col-xs-3 col-centered">
-	        		<div class="course">
-	        			<h4>Course Title</h4>
-						<img src="http://placehold.it/140x100" alt="">
-						<p class="course-description">Course Description Like about how amazing it is</p>
-						<button class="btn btn-success">Buy Now: $129</button>
-	        		</div>
-		        </div>
-		        <div class="col-xs-3 col-centered">
-	        		<div class="course">
-	        			<h4>Course Title</h4>
-						<img src="http://placehold.it/140x100" alt="">
-						<p class="course-description">Course Description Like about how amazing it is</p>
-						<button class="btn btn-success">Buy Now: $129</button>
-	        		</div>
-		        </div>
-		        <div class="col-xs-3 col-centered">
-	        		<div class="course">
-	        			<h4>Course Title</h4>
-						<img src="http://placehold.it/140x100" alt="">
-						<p class="course-description">Course Description Like about how amazing it is</p>
-						<button class="btn btn-success">Buy Now: $129</button>
-	        		</div>
-		        </div>
-		        <div class="col-xs-3 col-centered">
-	        		<div class="course">
-	        			<h4>Course Title</h4>
-						<img src="http://placehold.it/140x100" alt="">
-						<p class="course-description">Course Description Like about how amazing it is</p>
-						<button class="btn btn-success">Buy Now: $129</button>
-	        		</div>
-		        </div>
-		    </div>
-
 		</div>
 		<hr>
 		<div id="faq" class="row">
@@ -243,18 +116,10 @@
 		<hr>
 		<div class="row">
 			<h1 id="reviews">Reviews</h1>
+			<h2 class="text-center">4.5/5 Average Rating - 1,200 Reviews</h2>
 			<div class="row">
-				<div class="col-md-6">
-					<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">First Giants game of the year! Jack was not happy to be woken from… <a href="https://t.co/UoZdPaLRCk">https://t.co/UoZdPaLRCk</a></p>&mdash; Mike Adams (@mgadams3) <a href="https://twitter.com/mgadams3/status/723372035989069825">April 22, 2016</a></blockquote>
-				</div>
-				<div class="col-md-6">
-					<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">First Giants game of the year! Jack was not happy to be woken from… <a href="https://t.co/UoZdPaLRCk">https://t.co/UoZdPaLRCk</a></p>&mdash; Mike Adams (@mgadams3) <a href="https://twitter.com/mgadams3/status/723372035989069825">April 22, 2016</a></blockquote>
-				</div>
-				<div class="col-md-6">
-					<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">First Giants game of the year! Jack was not happy to be woken from… <a href="https://t.co/UoZdPaLRCk">https://t.co/UoZdPaLRCk</a></p>&mdash; Mike Adams (@mgadams3) <a href="https://twitter.com/mgadams3/status/723372035989069825">April 22, 2016</a></blockquote>
-				</div>
-				<div class="col-md-6">
-					<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">First Giants game of the year! Jack was not happy to be woken from… <a href="https://t.co/UoZdPaLRCk">https://t.co/UoZdPaLRCk</a></p>&mdash; Mike Adams (@mgadams3) <a href="https://twitter.com/mgadams3/status/723372035989069825">April 22, 2016</a></blockquote>
+				<div class="col-md-6" ng-repeat="review in data.reviews">
+					<p ng-bind-html="trustSnippet(review)"></p>
 				</div>
 			</div>
 		</div>
@@ -265,6 +130,7 @@
 	</div>
 	
 	<script src="/node_modules/angular/angular.js"></script>
+	<script src="/node_modules/angular-sanitize/angular-sanitize.js"></script>
 	<script src="/node_modules/jquery/dist/jquery.js"></script>
 	<script src="/node_modules/bootstrap/dist/js/bootstrap.js"></script>
 	<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>

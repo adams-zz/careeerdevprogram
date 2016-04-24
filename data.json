@@ -1,0 +1,163 @@
+{
+   "packages":[
+      {
+         "title":"Dream Job",
+         "courses":[
+            {
+               "title":"Salary Negotiation",
+               "url":"/salary-negotiation",
+               "imageurl":"http://placehold.it/140x100",
+               "description":"blah blah blah blah",
+               "price":129
+            },
+            {
+               "title":"Resume & Coverletters",
+               "url":"/salary-negotiation",
+               "imageurl":"http://placehold.it/140x100",
+               "description":"blah blah blah blah",
+               "price":129
+            },
+            {
+               "title":"Behavioral Interviews",
+               "url":"/salary-negotiation",
+               "imageurl":"http://placehold.it/140x100",
+               "description":"blah blah blah blah",
+               "price":129
+            },
+            {
+               "title":"Search Strategy & Networking",
+               "url":"/strategy-networking",
+               "imageurl":"http://placehold.it/140x100",
+               "description":"blah blah blah blah",
+               "price":129
+            }
+         ],
+         "description":"plah plah plah plah",
+         "url":"/dream-job",
+         "price":399,
+         "imageurl":"http://placehold.it/100x100"
+      },
+      {
+         "title":"Leveling Up",
+         "courses":[
+            {
+               "title":"Raise Negotiation",
+               "url":"/raise-negotiation",
+               "imageurl":"http://placehold.it/140x100",
+               "description":"blah blah blah blah",
+               "price":129
+            },
+            {
+               "title":"Open Source and Rebutation Building",
+               "url":"/reputation-building",
+               "imageurl":"http://placehold.it/140x100",
+               "description":"blah blah blah blah",
+               "price":129
+            },
+            {
+               "title":"Career Strategy & Networking",
+               "url":"/career-strategy",
+               "imageurl":"http://placehold.it/140x100",
+               "description":"blah blah blah blah",
+               "price":129
+            },
+            {
+               "title":"How to Influence People",
+               "url":"/influence",
+               "imageurl":"http://placehold.it/140x100",
+               "description":"blah blah blah blah",
+               "price":129
+            }
+         ],
+         "description":"plah plah plah plah",
+         "url":"/dream-job",
+         "price":399,
+         "imageurl":"http://placehold.it/100x100"
+      },
+      {
+         "title":"devMBA",
+         "courses":[
+            {
+               "title":"Business Negotiation",
+               "url":"/business-negotiation",
+               "imageurl":"http://placehold.it/140x100",
+               "description":"blah blah blah blah",
+               "price":129
+            },
+            {
+               "title":"How to Start a Start-up",
+               "url":"/start-up",
+               "imageurl":"http://placehold.it/140x100",
+               "description":"blah blah blah blah",
+               "price":129
+            },
+            {
+               "title":"How to Start a Cash-flow Business",
+               "url":"/cash-flow",
+               "imageurl":"http://placehold.it/140x100",
+               "description":"blah blah blah blah",
+               "price":129
+            },
+            {
+               "title":"Freelancing & Consulting",
+               "url":"/freelancing-consulting",
+               "imageurl":"http://placehold.it/140x100",
+               "description":"blah blah blah blah",
+               "price":129
+            }
+         ],
+         "description":"plah plah plah plah",
+         "url":"/dream-job",
+         "price":399,
+         "imageurl":"http://placehold.it/100x100"
+      }
+   ],
+   "reviews":[
+      "<blockquote class=\"twitter-tweet\" data-lang=\"en\"><p lang=\"en\" dir=\"ltr\">First Giants game of the year! Jack was not happy to be woken from… <a href=\"https://t.co/UoZdPaLRCk\">https://t.co/UoZdPaLRCk</a></p>&mdash; Mike Adams (@mgadams3) <a href=\"https://twitter.com/mgadams3/status/723372035989069825\">April 22, 2016</a></blockquote>",
+      "<blockquote class=\"twitter-tweet\" data-lang=\"en\"><p lang=\"en\" dir=\"ltr\">First Giants game of the year! Jack was not happy to be woken from… <a href=\"https://t.co/UoZdPaLRCk\">https://t.co/UoZdPaLRCk</a></p>&mdash; Mike Adams (@mgadams3) <a href=\"https://twitter.com/mgadams3/status/723372035989069825\">April 23, 2016</a></blockquote>",
+      "<blockquote class=\"twitter-tweet\" data-lang=\"en\"><p lang=\"en\" dir=\"ltr\">First Giants game of the year! Jack was not happy to be woken from… <a href=\"https://t.co/UoZdPaLRCk\">https://t.co/UoZdPaLRCk</a></p>&mdash; Mike Adams (@mgadams3) <a href=\"https://twitter.com/mgadams3/status/723372035989069825\">April 24, 2016</a></blockquote>",
+      "<blockquote class=\"twitter-tweet\" data-lang=\"en\"><p lang=\"en\" dir=\"ltr\">First Giants game of the year! Jack was not happy to be woken from… <a href=\"https://t.co/UoZdPaLRCk\">https://t.co/UoZdPaLRCk</a></p>&mdash; Mike Adams (@mgadams3) <a href=\"https://twitter.com/mgadams3/status/723372035989069825\">April 25, 2016</a></blockquote>"
+   ],
+   "faqs":[
+      {
+         "question":"How do you do cool stuff?",
+         "answer":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+      },
+      {
+         "question":"How do you do cool stuff?",
+         "answer":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+      },
+      {
+         "question":"How do you do cool stuff?",
+         "answer":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+      }
+   ],
+   "salesbullets":[
+      "Awesome Thing #1",
+      "Awesome Thing #2",
+      "Awesome Thing #3",
+      "Awesome Thing #4",
+      "Awesome Thing #5",
+      "Awesome Thing #6",
+      "Awesome Thing #7",
+      "Awesome Thing #8",
+      "Awesome Thing #9"
+   ],
+   "methods":[
+      {
+         "title":"Real World Examples",
+         "imageurl":"http://placehold.it/350x150",
+         "details":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+      },
+      {
+         "title":"Schedule/Task Driven",
+         "imageurl":"http://placehold.it/350x150",
+         "details":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+      },
+      {
+         "title":"Step-by-step Scripts",
+         "imageurl":"http://placehold.it/350x150",
+         "details":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+      }
+   ]
+}
